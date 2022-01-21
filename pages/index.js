@@ -1,14 +1,18 @@
-// import Head from 'next/head'
+
 // import Image from 'next/image'
 // import axios from 'axios'
 
+// import Head from 'next/head'
+
 import Card from '../components/card/Card'
 import styles from '../styles/Home.module.css'
+import Header from "./Header";
 
 export default function Home({posts}) {
-
   return (
-    <div className={styles.container}>
+    <>
+    <Header/>
+
       <h1 className={styles.home}>Porpular Article </h1>
       <div className={styles.card}>
         {
@@ -18,9 +22,9 @@ export default function Home({posts}) {
             />  
             )
         }
-       
       </div> 
-    </div>
+    </>
+
   )
 }
 
